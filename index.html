@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <div class="container">
+        <form method="post" class="formulario">
+            <div class="formbx">
+                <div class="inputbx w50">
+                    <input type="text"   class="nome valida"> 
+                    <label>Nome</label>
+                </div>
+                <div class="inputbx w50">
+                    <input type="text"  class="sobrenome valida">                    
+                    <label>Sobrenome</label>
+                </div>
+                <div class="inputbx w50">
+                    <input type="text"  class="nick valida">                    
+                    <label>Nickname</label>
+                </div>
+                <div class="inputbx w50">
+                    <input type="text" oninput="mascara(this)"  class="cpf valida">                    
+                    <label>CPF</label>
+                </div>
+                <div class="inputbx w50">
+                    <input type="text"  class="email valida">                    
+                    <label>Email</label>
+                </div>
+                <div class="inputbx w50">
+                    <input type="text"  class="repetir-email valida">                    
+                    <label>Repetir Email</label>
+                </div>
+                <div class="inputbx w50">
+                    <input type="password"  class="senha valida">                    
+                    <label>Senha</label>
+                </div>
+                <div class="inputbx w50">
+                    <input type="password"  class="repetir-senha valida">                    
+                    <label>Repetir senha</label>
+                </div>
+            </div>
+            <div class="btnbx">
+                <button type="submit" class="btn">Enviar</button>
+            </div>
+        </form>
+    </div>
+    <script src="assets/js/validaCPF.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
